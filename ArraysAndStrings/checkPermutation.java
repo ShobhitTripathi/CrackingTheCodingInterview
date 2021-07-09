@@ -26,6 +26,8 @@ public class checkPermutation {
         return true;
     }
 
+    
+    /*-----------test-------------------------*/
     public static void main(String[] args) {
         String s1 = "abcd";
         String s2 = "dbcz";
