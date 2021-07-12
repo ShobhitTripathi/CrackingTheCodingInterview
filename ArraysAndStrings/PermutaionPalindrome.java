@@ -15,7 +15,6 @@ either adding the character to the hash table as a key or incrementing the count
 Characters = key and count = value.
 Iterate through the hash table to make sure character counts are all even or at most one value is odd.
 **/
-
     public static boolean canPermutePalindromeSet(String s) {
         Set<Character> set = new HashSet<>();
         for (int i = 0;i < s.length();i++) {
@@ -27,14 +26,14 @@ Iterate through the hash table to make sure character counts are all even or at 
 
         return set.size() <= 1;
     }
-    static boolean checkPermutaionPalindromeMap (String s) {
+ 
+    public static boolean checkPermutaionPalindromeMap (String s) {
         Map<Character, Integer> map = new HashMap<>();
         int count = 0;
 
         for (char c : s.toCharArray()) {
             map.put(c , map.getOrDefault(c, 0) + 1);
         }
-        System.out.println(map.toString());
 
         for (char key : map.keySet()) {
                 count += map.get(key) % 2;
@@ -42,9 +41,10 @@ Iterate through the hash table to make sure character counts are all even or at 
         return count <= 1;
     }
 
+    /*-----------------Test code------------*/
     public static void main(String[] args) {
-        String s = "tactcoat";
-        System.out.println(canPermutePalindromeSet(s));
-        System.out.println(checkPermutaionPalindromeMap(s));
+        String s = "tactcoa";
+        System.out.println("using HashSet isPermutationPalindrome: " + canPermutePalindromeSet(s));
+        System.out.println("using HashMap isPermutationPalindrome" + checkPermutaionPalindromeMap(s));
     }
 }
