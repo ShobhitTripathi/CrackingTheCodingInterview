@@ -32,6 +32,7 @@ public class RotateMatrix {
         }
     }
 
+    /*------------------------Test Code--------*/
     public static void main (String[] args) {
         int[][] array = {{7,8,9},
                          {4,5,6},
