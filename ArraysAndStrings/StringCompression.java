@@ -30,6 +30,7 @@ public class StringCompression {
         return obj;
     }
 
+    /*----------Driver Code--------------*/
     public static void main(String[] args) {
         String s = "aabcccccaaa";
         //o/p : a2bc5a3
