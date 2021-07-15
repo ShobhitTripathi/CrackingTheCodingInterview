@@ -45,6 +45,7 @@ public class SetMatrixZeros {
         }
     }
 
+    /*---------Test code------------------*/
     public static void main (String[] args) {
         int[][] array = {{1,8,9},
                         {4,0,6},
