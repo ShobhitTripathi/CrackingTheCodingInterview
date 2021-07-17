@@ -51,6 +51,8 @@ public class StringUniqueCharacters {
     }
 
     public static void main(String[] args) {
+        //i/p: abba  o/p: false
+        //ip: abcded o/p: true
         String s = "abcdef";
         System.out.println("String: "+ s);
         System.out.println("hasUniqueCharacters: " + hasUniqueCharacters(s));
