@@ -30,9 +30,8 @@ public class urlify {
         return sb.toString();
     }
 
+    /*-----------Driver code--------------*/
     public static void main (String[] args) {
-//        String S = "Mr John Smith    ";
-//        System.out.println("new String: " + replaceUsingStringBuilder(S));
         String s = "Mr John Smith";
         String extraSpaces = "    ";
         char[] toBeTransformed = (s + extraSpaces).toCharArray();
