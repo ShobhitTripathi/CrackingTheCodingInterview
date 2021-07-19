@@ -42,17 +42,12 @@ public class StringRotationCheck {
     }
 
 
+    /*--------------Driver Code ----------*/
     public static void main(String[] args) {
         String s1 = "waterbottle";
         String s2 = "rbottlewate";
         System.out.println("String s1 :" + s1);
         System.out.println("String s2 : " + s2);
         System.out.println("is s2 :" + s2 + " rotation of String s1 : " + s1 + " : " + isSubString(s1, s2));
-
-//        char[] charArray = s2.toCharArray();
-//        rotate(charArray,3);
-////        reverseString(charArray,0, charArray.length - 1);
-//        for (int i = 0;i < charArray.length;i++)
-//            System.out.print(charArray[i]);
     }
 }
