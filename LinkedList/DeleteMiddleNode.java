@@ -51,6 +51,7 @@ public class DeleteMiddleNode {
 
     }
 
+    /*-----------Driver Code--------------*/
     public static void main(String[] args) {
         ListNode<Integer> head = new ListNode<>(1);
         head.next = new ListNode(2);
@@ -58,10 +59,7 @@ public class DeleteMiddleNode {
         head.next.next.next = new ListNode(4);
         head.next.next.next.next = new ListNode(5);
         head.next.next.next.next.next = new ListNode(6);
-//            head.next.next.next.next = head.next.next;
 
-//        int index = findMiddle(head);
-//        deleteNodeAtIndex(head, index);
         deleteNode(head.next.next.next);
         ListNode<Integer> temp = head;
         while (temp != null) {
