@@ -28,7 +28,6 @@ public class MergeSortInLinkedList {
         if (head == null || head.next == null)
             return head;
         ListNode<Integer> middle = getMiddleNode(head);
-//        System.out.println(middle.val);
         ListNode<Integer> nextOfMiddle = middle.next;
         middle.next = null;
 
@@ -55,6 +54,7 @@ public class MergeSortInLinkedList {
         return slow;
     }
 
+    /*-------------Driver Code -------------*/
     public static void main(String[] args) {
         ListNode<Integer> head = new ListNode(1);
         head.next = new ListNode(15);
@@ -62,8 +62,6 @@ public class MergeSortInLinkedList {
         head.next.next.next = new ListNode(9);
         head.next.next.next.next = new ListNode(2);
         head.next.next.next.next.next = new ListNode(5);
-
-
 
         ListNode<Integer> temp = mergeSort(head);
         while (temp != null) {
