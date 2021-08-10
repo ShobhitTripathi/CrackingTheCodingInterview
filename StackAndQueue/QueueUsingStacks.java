@@ -26,8 +26,7 @@ public class QueueUsingStacks<E> implements Queue<E>{
     @Override
     public void add(E element) {
         // Move all elements from stack1 to stack2
-        while (!stack1.isEmpty())
-        {
+        while (!stack1.isEmpty()) {
             stack2.push(stack1.pop());
             //stack1.pop();
         }
@@ -36,8 +35,7 @@ public class QueueUsingStacks<E> implements Queue<E>{
         stack1.push(element);
 
         // Push everything back to stack1
-        while (!stack2.isEmpty())
-        {
+        while (!stack2.isEmpty()) {
             stack1.push(stack2.pop());
             //stack2.pop();
         }
