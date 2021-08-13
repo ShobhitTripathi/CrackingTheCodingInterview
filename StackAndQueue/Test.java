@@ -158,19 +158,30 @@ public class Test {
     }
 
 
+    /*----Driver code for the package-----*/
     public static void main (String[] args) {
-//        stackUsingArrayTest();
-//        StackUsingLinkedListTest();
-//        stackUsingArrayListTest();
-//        minStackTest();
+       stackUsingArrayTest();
+       System.out.println();
+        
+       StackUsingLinkedListTest();
+       System.out.println();
+        
+       stackUsingArrayListTest();
+       System.out.println();
+        
+       minStackTest();
+       System.out.println();
 
-//        queueUsingArrayTest();
-//        System.out.println();
-//        queueUsingLinkedListTest();
-//        System.out.println();
-//        queueUsingStackTest();
-        animalShelterTest();
-
+       queueUsingArrayTest();
+       System.out.println();
+        
+       queueUsingLinkedListTest();
+       System.out.println();
+        
+       queueUsingStackTest();
+       System.out.println();
+        
+       animalShelterTest();
 
     }
 }
