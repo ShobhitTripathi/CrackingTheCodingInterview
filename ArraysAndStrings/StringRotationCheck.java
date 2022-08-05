@@ -41,6 +41,20 @@ public class StringRotationCheck {
         }
     }
 
+    // Solution 2 : isRotation
+    public static boolean isRotation(String s1, String s2) {
+      if (s1.length() != s2.length()) {
+         return false;
+      }
+      String s1s1 = s1 + s1;
+      System.out.println("s1s1: " + s1s1);
+      System.out.println("s2: " + s2);
+      return isSubstring(s1s1, s2);
+   }
+   
+   private static boolean isSubstring(String str, String substr) {
+      return str.contains(substr);
+   }
 
     /*--------------Driver Code ----------*/
     public static void main(String[] args) {
@@ -48,6 +62,7 @@ public class StringRotationCheck {
         String s2 = "rbottlewate";
         System.out.println("String s1 :" + s1);
         System.out.println("String s2 : " + s2);
-        System.out.println("is s2 :" + s2 + " rotation of String s1 : " + s1 + " : " + isSubString(s1, s2));
+        System.out.println("Solutio1 : is s2 :" + s2 + " rotation of String s1 : " + s1 + " : " + isSubString(s1, s2));
+        System.out.println("Solution2 : is s2 :" + s2 + " rotation of String s1 : " + s1 + " : " + isRotation(s1, s2));
     }
 }
